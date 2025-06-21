@@ -9,7 +9,7 @@ import time
 # OLLAMA_HOST = os.getenv("OLLAMA_HOST", "http://ollama:11434")
 # OLLAMA_HOST = os.getenv("OLLAMA_HOST", "http://localhost:11434")
 OLLAMA_HOST = os.getenv("OLLAMA_HOST", "http://host.docker.internal:11434")
-VISION_MODELS = ["llava", "bakllava", "llava-phi3", "qwen2.5vl:3b", "llama3.2-vision:11b"]
+VISION_MODELS = ["llava", "bakllava", "llava-phi3", "qwen2.5vl:3b", "minicpm-v:8b", "llama3.2-vision:11b"]
 
 # --- Streamlit UI ---
 st.set_page_config(page_title="Lost Item Image Analyzer", layout="centered")
