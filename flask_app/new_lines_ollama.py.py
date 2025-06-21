@@ -37,7 +37,7 @@ def parse_report():
 #llama3.2-vision:11b
 @app.route('/models', methods=['GET'])
 def list_models():
-    return jsonify({"models": ["llava", "bakllava", "llava-phi3", "qwen2.5vl:3b", "llama3.2-vision:11b"]})
+    return jsonify({"models": ["llava", "bakllava", "llava-phi3", "qwen2.5vl:3b", "minicpm-v:8b", "llama3.2-vision:11b"]})
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5002)
