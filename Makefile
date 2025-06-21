@@ -49,8 +49,8 @@ run:
 	docker network create $(NETWORK_NAME) || true
 	-docker rm -f $(OLLAMA_CONTAINER) $(FLASK_CONTAINER) $(UI_CONTAINER)
 	#docker run -d --gpus all --name $(OLLAMA_CONTAINER) --network $(NETWORK_NAME) -v ollama:/root/.ollama -p $(OLLAMA_PORT):11434 $(OLLAMA_IMAGE)
-	docker run -d --name $(FLASK_CONTAINER) --network $(NETWORK_NAME) -p $(FLASK_PORT):$(FLASK_PORT) $(FLASK_IMAGE)
-	docker run -d --name $(UI_CONTAINER) --network $(NETWORK_NAME) -p $(UI_PORT):8501 $(UI_IMAGE)
+	docker run -d --name $(FLASK_CONTAINER) --add-host=host.docker.internal:host-gateway --network $(NETWORK_NAME) -p $(FLASK_PORT):$(FLASK_PORT) $(FLASK_IMAGE)
+	docker run -d --name $(UI_CONTAINER) --add-host=host.docker.internal:host-gateway --network $(NETWORK_NAME) -p $(UI_PORT):8501 $(UI_IMAGE)
 
 stop:
 	@echo "Stopping containers..."
