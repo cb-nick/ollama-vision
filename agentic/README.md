@@ -1,6 +1,6 @@
 This code presents a Streamlit web application designed for automatic image annotation. The application leverages several AI models to analyze uploaded images, describe their content, detect objects, and annotate them visually.
 
-## Core Architecture
+# Core Architecture 
 
 The application is built around a pipeline that combines several specialized models:
 
@@ -44,3 +44,8 @@ The application makes efficient use of state management through Streamlit's sess
 The application also handles errors gracefully, providing user-friendly error messages when issues occur during image processing. Performance information (processing time) is displayed to give users an indication of how long operations take.
 
 Overall, this is a sophisticated AI application that combines multiple vision and language models in a unified, user-friendly interface for automatic image analysis and annotation.
+
+## Run on port 8503
+
+streamlit run image_auto_annotation_single_pane.py --server.address=0.0.0.0 --server.port=8503
+
