@@ -1,5 +1,10 @@
 This code presents a Streamlit web application designed for automatic image annotation. The application leverages several AI models to analyze uploaded images, describe their content, detect objects, and annotate them visually.
 
+
+https://github.com/XinyueZ/chat-your-doc
+
+
+
 # Core Architecture 
 
 The application is built around a pipeline that combines several specialized models:
