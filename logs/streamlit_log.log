@@ -1,0 +1,253 @@
+2025-07-09 20:22:22,265 [INFO] Request ID: 937ee077-80fd-4f65-9922-eb6a73a46c41, Response time: 39.44 seconds
+2025-07-09 21:02:52,599 [INFO] Request ID: 9ccf6c79-cc13-43de-afe3-a838ca7db0b8, Response time: 18.12 seconds
+2025-07-09 23:43:06,062 [INFO] Request ID: 66d49ee8-6094-41cf-a463-a360ca9c6438, Response time: 38.58 seconds
+2025-07-10 16:39:46,132 [INFO] Request ID: c97cc756-7aa2-44b3-b6dd-632c76106479, Response time: 42.14 seconds
+2025-07-10 16:48:08,271 [INFO] Request ID: df23d6b8-17cc-433e-b33e-379c05793912, Response time: 29.84 seconds
+2025-07-10 16:49:57,576 [INFO] Request ID: d45d9c13-ff19-4647-966d-356e44f668a7, Response time: 20.51 seconds
+2025-07-10 16:52:17,769 [INFO] Request ID: c3c5b2a5-1824-42e5-9cac-0f2ab85343e8, Response time: 16.6 seconds
+2025-07-10 16:57:06,704 [INFO] Request ID: 4c8d34aa-b858-4c50-b664-cddf147e3e8c, Response time: 57.15 seconds
+2025-07-10 16:59:43,894 [INFO] Request ID: 82b453de-4112-46a8-850a-8425fc6cc98b, Response time: 35.78 seconds
+2025-07-10 20:00:47,654 [INFO] Request ID: 098b1d9a-2f50-41a1-96aa-45d37a346097, Response time: 50.33 seconds
+2025-07-10 20:02:09,774 [INFO] Request ID: 14f0b351-1f1c-4a3e-9d21-8ba06d6fe0bb, Response time: 2.49 seconds
+2025-07-10 20:03:13,062 [INFO] Request ID: 7371bd96-7fee-4859-8f8b-26a84529c904, Response time: 49.32 seconds
+2025-07-10 20:04:02,988 [INFO] Request ID: 59b37dc4-8a42-44fb-9893-d5caf3bc27c5, Response time: 25.67 seconds
+2025-07-10 20:08:12,079 [INFO] Request ID: 49318fe7-7233-450c-be6b-bf65cb1025d5, Response time: 168.64 seconds
+2025-07-10 20:13:35,945 [INFO] Request ID: 80e6ac85-4923-4deb-8a23-bd4a96fd4e4b, Response time: 168.51 seconds
+2025-07-10 20:23:52,782 [INFO] Request ID: 08e278b0-dbf9-4ecd-a3ee-b290632bcf7c, Response time: 88.97 seconds
+2025-07-10 20:25:04,439 [INFO] Request ID: 9a15d646-4ebe-4a66-8cca-906ce4872e38, Response time: 49.77 seconds
+2025-07-10 20:31:09,580 [INFO] Request ID: ad513371-f7ca-45c8-96b2-231b3d14e9d3, Response time: 87.88 seconds
+2025-07-10 20:33:48,069 [INFO] Request ID: 3cbbe637-ad20-4781-930a-03dcdd307dab, Response time: 56.38 seconds
+2025-07-10 20:41:05,514 [INFO] Request ID: 7c566d7c-3922-48ff-ba0d-8f0b11f8b3ae, Response time: 104.4 seconds
+2025-07-10 20:45:49,732 [INFO] Request ID: 1fb82e2b-817c-45f6-8dde-05a9ee783992, Response time: 27.86 seconds
+2025-07-10 20:50:02,195 [INFO] Request ID: 71fc31c2-1688-4362-a9a2-a886fb6d4aaf, Response time: 28.51 seconds
+2025-07-10 20:53:54,466 [INFO] Request ID: 4442e1c9-db57-4107-bc4e-fe145ffb3ac9, Response time: 4.22 seconds
+2025-07-10 20:55:08,008 [INFO] Request ID: 68a3bbe4-3077-4786-8074-5bc48daa2ef9, Response time: 3.5 seconds
+2025-07-10 20:56:39,734 [INFO] Request ID: e983ac19-e33b-4fff-8e98-70be076d99d4, Response time: 4.13 seconds
+2025-07-10 20:57:10,243 [INFO] Request ID: 979e07f1-754e-44a3-b9e3-07b8c05f0332, Response time: 13.57 seconds
+2025-07-10 21:02:25,545 [INFO] Request ID: 347a0c58-80c2-40ce-9f37-95b9aedab42d, Response time: 14.67 seconds
+2025-07-10 21:03:58,570 [INFO] Request ID: 2eda8547-14cd-4770-91b6-75d5748e0126, Response time: 47.46 seconds
+2025-07-10 21:05:10,991 [INFO] Request ID: 7f427f61-24c2-47ef-9211-17aab4da1c7e, Response time: 48.32 seconds
+2025-07-10 21:06:34,136 [INFO] Request ID: 16ea8d7f-0a4b-4134-bf04-6856ce4cd97d, Response time: 47.85 seconds
+2025-07-10 21:09:00,578 [INFO] Request ID: 6eb6db5c-31c8-4c6a-a973-4be96d8e40ed, Response time: 50.22 seconds
+2025-07-10 21:12:50,616 [INFO] Request ID: e21e9a05-ef14-46c8-965f-b2760adaa077, Response time: 48.48 seconds
+2025-07-10 21:14:06,744 [INFO] Request ID: 3cf791eb-5dc8-49be-b42f-b98d6bb949a3, Response time: 48.51 seconds
+2025-07-10 21:19:08,526 [INFO] Request ID: 8efe7186-ec5f-4a32-b21c-4104895238c7, Response time: 72.5 seconds
+2025-07-10 21:21:09,033 [INFO] Request ID: c49ccea3-2a37-4f42-82b6-073687515d1e, Response time: 27.91 seconds
+2025-07-10 21:24:50,278 [INFO] Request ID: f9b2b4d4-4e74-4ef5-8aad-e86f7e72df1c, Response time: 4.62 seconds
+2025-07-10 21:25:39,064 [INFO] Request ID: 35568dc0-e325-4ee5-b9fb-7657bec5e311, Response time: 34.61 seconds
+2025-07-10 22:07:48,068 [INFO] Request ID: 545f5f9e-2300-4b03-9247-28f2cdb46dfd, Response time: 34.63 seconds
+2025-07-10 22:09:01,750 [INFO] Request ID: cf3f1548-b420-474a-b5f9-aa3c64d35c61, Response time: 30.88 seconds
+2025-07-10 22:10:18,595 [INFO] Request ID: 3954da9b-f9c3-4a03-b2d9-8fe7f5f443e7, Response time: 45.08 seconds
+2025-07-10 22:11:27,171 [INFO] Request ID: d9ad8604-2dfd-4f67-be59-c9665ba16469, Response time: 47.98 seconds
+2025-07-10 22:13:01,409 [INFO] Request ID: ce312be8-4deb-491c-ae81-32e614899f8e, Response time: 32.01 seconds
+2025-07-10 22:14:31,813 [INFO] Request ID: 8f4522f0-18e3-4960-be5e-58f3827985c0, Response time: 45.83 seconds
+2025-07-10 22:16:22,876 [INFO] Request ID: 29b65be3-04d6-4153-a55c-24cbbb382ef2, Response time: 71.15 seconds
+2025-07-10 22:19:38,669 [INFO] Request ID: 172eec99-e857-4711-a085-7db1463fa6fe, Response time: 78.61 seconds
+2025-07-10 22:22:13,964 [INFO] Request ID: 38211612-dffa-4d92-829d-3572ce18f96f, Response time: 54.16 seconds
+2025-07-10 22:32:23,876 [INFO] Request ID: bbeb0460-3043-459e-b710-0aa9974a7491, Response time: 23.73 seconds
+2025-07-10 22:33:21,539 [INFO] Request ID: 7d574619-3a4a-4bd3-bd4a-865c93a5db66, Response time: 16.99 seconds
+2025-07-11 22:05:53,461 [INFO] Use pytorch device_name: cpu
+2025-07-11 22:05:53,463 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-11 22:06:02,279 [INFO] Use pytorch device_name: cpu
+2025-07-11 22:06:02,279 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-11 22:06:07,033 [INFO] Use pytorch device_name: cpu
+2025-07-11 22:06:07,033 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-11 22:07:21,059 [INFO] Request ID: 01882e76-23f5-4f9d-bf92-792871af0084, Response time: 72.58 seconds
+2025-07-11 22:17:23,636 [INFO] Use pytorch device_name: cpu
+2025-07-11 22:17:23,637 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-11 22:17:27,470 [INFO] Use pytorch device_name: cpu
+2025-07-11 22:17:27,470 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-11 22:18:40,731 [INFO] Request ID: 2759aec8-05af-4393-acf4-ed88a7b2f74c, Response time: 71.9 seconds
+2025-07-11 22:25:32,867 [INFO] Use pytorch device_name: cpu
+2025-07-11 22:25:32,867 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-11 22:25:36,444 [INFO] Use pytorch device_name: cpu
+2025-07-11 22:25:36,445 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-11 22:26:50,238 [INFO] Request ID: cfb374cd-a808-41c5-ac16-021e75d1bd59, Response time: 71.99 seconds
+2025-07-11 23:05:06,157 [INFO] Use pytorch device_name: cpu
+2025-07-11 23:05:06,158 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-11 23:05:09,680 [INFO] Use pytorch device_name: cpu
+2025-07-11 23:05:09,680 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-11 23:06:19,895 [INFO] Request ID: a48d14c5-ab3b-4312-975d-4666c779f2b9, Response time: 68.72 seconds
+2025-07-11 23:06:48,015 [INFO] Use pytorch device_name: cpu
+2025-07-11 23:06:48,015 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-11 23:06:51,669 [INFO] Use pytorch device_name: cpu
+2025-07-11 23:06:51,669 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-11 23:07:27,051 [INFO] Request ID: 5566f02f-8c80-4b6e-99a2-c0c21cdf8214, Response time: 34.01 seconds
+2025-07-11 23:08:09,397 [INFO] Use pytorch device_name: cpu
+2025-07-11 23:08:09,398 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-11 23:08:14,463 [INFO] Request ID: 5566f02f-8c80-4b6e-99a2-c0c21cdf8214, Response time: 3.7 seconds
+2025-07-11 23:08:22,980 [INFO] Use pytorch device_name: cpu
+2025-07-11 23:08:22,981 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-11 23:08:25,418 [INFO] Use pytorch device_name: cpu
+2025-07-11 23:08:25,418 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-11 23:09:17,557 [INFO] Request ID: f0458ad7-2f05-4051-8d2b-396d3573b14f, Response time: 50.75 seconds
+2025-07-11 23:09:48,530 [INFO] Use pytorch device_name: cpu
+2025-07-11 23:09:48,530 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-11 23:09:51,108 [INFO] Use pytorch device_name: cpu
+2025-07-11 23:09:51,109 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-11 23:10:44,780 [INFO] Request ID: 4b257063-280d-4c47-a02f-9ad7f84095c4, Response time: 52.31 seconds
+2025-07-11 23:12:35,621 [INFO] Use pytorch device_name: cpu
+2025-07-11 23:12:35,622 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-11 23:12:38,285 [INFO] Use pytorch device_name: cpu
+2025-07-11 23:12:38,285 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-11 23:13:31,379 [INFO] Request ID: 05122c8b-8cb6-455a-86a9-84e89b77ae0c, Response time: 51.69 seconds
+2025-07-11 23:14:49,687 [INFO] Use pytorch device_name: cpu
+2025-07-11 23:14:49,687 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-11 23:14:53,209 [INFO] Use pytorch device_name: cpu
+2025-07-11 23:14:53,209 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-11 23:15:15,957 [INFO] Request ID: ba830ddb-4104-4ab7-9ffb-c40f653c8ba6, Response time: 21.35 seconds
+2025-07-11 23:15:49,573 [INFO] Use pytorch device_name: cpu
+2025-07-11 23:15:49,573 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-11 23:15:52,126 [INFO] Use pytorch device_name: cpu
+2025-07-11 23:15:52,126 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-11 23:16:11,163 [INFO] Request ID: 538e30df-e938-4945-a82d-766c7f493713, Response time: 17.68 seconds
+2025-07-11 23:16:53,883 [INFO] Use pytorch device_name: cpu
+2025-07-11 23:16:53,883 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-11 23:16:57,209 [INFO] Use pytorch device_name: cpu
+2025-07-11 23:16:57,209 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-11 23:17:50,014 [INFO] Request ID: 357a3854-116e-4420-899c-c06c57d32ab0, Response time: 51.44 seconds
+2025-07-11 23:18:18,049 [INFO] Use pytorch device_name: cpu
+2025-07-11 23:18:18,050 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-11 23:18:21,922 [INFO] Use pytorch device_name: cpu
+2025-07-11 23:18:21,923 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-11 23:18:58,892 [INFO] Request ID: 8ac13c77-906d-4b47-952c-15749ee505e5, Response time: 35.57 seconds
+2025-07-11 23:20:43,912 [INFO] Use pytorch device_name: cpu
+2025-07-11 23:20:43,913 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-11 23:20:46,550 [INFO] Use pytorch device_name: cpu
+2025-07-11 23:20:46,550 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-11 23:21:44,697 [INFO] Request ID: 1b4e411e-2ebd-4ff3-8af8-0cdaa1370d9f, Response time: 56.49 seconds
+2025-07-11 23:30:05,704 [INFO] Use pytorch device_name: cpu
+2025-07-11 23:30:05,705 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-11 23:30:09,356 [INFO] Use pytorch device_name: cpu
+2025-07-11 23:30:09,356 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-11 23:31:20,198 [INFO] Request ID: 8ce8f7cc-d2df-49ed-8c29-1e574330a6f5, Response time: 69.46 seconds
+2025-07-11 23:32:17,233 [INFO] Use pytorch device_name: cpu
+2025-07-11 23:32:17,234 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-11 23:32:30,591 [INFO] Use pytorch device_name: cpu
+2025-07-11 23:32:30,591 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-11 23:33:08,739 [INFO] Request ID: d2dcd9c2-0338-45dd-b32a-d60f1942a332, Response time: 36.74 seconds
+2025-07-11 23:33:36,324 [INFO] Use pytorch device_name: cpu
+2025-07-11 23:33:36,325 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-11 23:33:39,417 [INFO] Use pytorch device_name: cpu
+2025-07-11 23:33:39,417 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-11 23:34:36,355 [INFO] Request ID: 43903779-33dd-4031-8c76-1fe55d0f5483, Response time: 55.5 seconds
+2025-07-11 23:38:07,786 [INFO] Use pytorch device_name: cpu
+2025-07-11 23:38:07,786 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-11 23:38:12,426 [INFO] Use pytorch device_name: cpu
+2025-07-11 23:38:12,426 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-11 23:38:49,671 [INFO] Request ID: 96fe7170-a6b6-4da3-a24f-11b4b397a4e3, Response time: 35.89 seconds
+2025-07-14 22:33:21,835 [INFO] Use pytorch device_name: cpu
+2025-07-14 22:33:21,836 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-14 22:33:28,109 [INFO] Use pytorch device_name: cpu
+2025-07-14 22:33:28,110 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-14 22:34:51,397 [INFO] Request ID: 722664e2-b5e5-4b2e-8885-f86e4f7a9c72, Response time: 81.88 seconds
+2025-07-14 22:35:47,590 [INFO] Use pytorch device_name: cpu
+2025-07-14 22:35:47,590 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-14 22:35:58,447 [INFO] Use pytorch device_name: cpu
+2025-07-14 22:35:58,448 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-14 22:36:00,350 [INFO] Use pytorch device_name: cpu
+2025-07-14 22:36:00,350 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-14 22:36:16,706 [INFO] Request ID: 3ab3bfe1-c02c-4da9-8f45-2bfaedeff804, Response time: 15.01 seconds
+2025-07-14 22:36:37,650 [INFO] Use pytorch device_name: cpu
+2025-07-14 22:36:37,650 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-14 22:36:38,946 [INFO] Use pytorch device_name: cpu
+2025-07-14 22:36:38,946 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-14 22:36:46,167 [INFO] Request ID: 1a914bb4-12a8-4c4e-8b6f-25d1ed660759, Response time: 5.72 seconds
+2025-07-14 22:37:01,339 [INFO] Use pytorch device_name: cpu
+2025-07-14 22:37:01,339 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-14 22:37:03,639 [INFO] Use pytorch device_name: cpu
+2025-07-14 22:37:03,640 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-14 22:38:01,402 [INFO] Request ID: f553d206-09d8-4d0b-9ed6-54b4b732974d, Response time: 56.4 seconds
+2025-07-14 23:24:12,246 [INFO] Use pytorch device_name: cpu
+2025-07-14 23:24:12,343 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-14 23:24:17,467 [INFO] Use pytorch device_name: cpu
+2025-07-14 23:24:17,467 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-14 23:25:27,921 [INFO] Request ID: be136ad7-2c40-4b80-9d45-1f10c7eca632, Response time: 68.51 seconds
+2025-07-15 16:36:11,824 [INFO] Use pytorch device_name: cpu
+2025-07-15 16:36:11,824 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-15 16:36:15,291 [INFO] Use pytorch device_name: cpu
+2025-07-15 16:36:15,291 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-15 16:37:26,137 [INFO] Request ID: c15a18b7-a648-4af5-a6b2-341a5305c452, Response time: 69.33 seconds
+2025-07-15 16:40:16,555 [INFO] Use pytorch device_name: cpu
+2025-07-15 16:40:16,556 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-15 16:40:22,253 [INFO] Use pytorch device_name: cpu
+2025-07-15 16:40:22,253 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-15 16:41:12,478 [INFO] Request ID: bb825b95-97c6-4f3b-b838-bf0cb3851263, Response time: 48.9 seconds
+2025-07-15 16:41:16,842 [INFO] Use pytorch device_name: cpu
+2025-07-15 16:41:16,842 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-15 16:43:15,653 [INFO] Use pytorch device_name: cpu
+2025-07-15 16:43:15,654 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-15 16:43:18,553 [INFO] Use pytorch device_name: cpu
+2025-07-15 16:43:18,553 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-15 16:44:11,908 [INFO] Request ID: 8104c723-3c5d-4967-b1b3-1beb7db147e7, Response time: 51.81 seconds
+2025-07-15 16:44:42,769 [INFO] Use pytorch device_name: cpu
+2025-07-15 16:44:42,769 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-15 16:44:45,475 [INFO] Use pytorch device_name: cpu
+2025-07-15 16:44:45,475 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-15 16:45:40,966 [INFO] Request ID: 7f6263ab-48a8-4804-8223-cf9e43bff855, Response time: 53.61 seconds
+2025-07-15 22:29:38,677 [INFO] Request ID: abeaea1e-21f2-4f16-9f5f-ac4f053124cd, Response time: 89.36 seconds
+2025-07-15 23:12:35,143 [INFO] Request ID: e372d333-2eba-4ed4-bd59-b341ca2f012e, Response time: 85.49 seconds
+2025-07-15 23:14:41,965 [INFO] Request ID: e372d333-2eba-4ed4-bd59-b341ca2f012e, Response time: 4.63 seconds
+2025-07-15 23:15:32,595 [INFO] Request ID: a80d5f34-1c34-49f7-8d31-74873c502bb9, Response time: 38.58 seconds
+2025-07-15 23:16:38,361 [INFO] Request ID: b4065df6-b55d-4140-8201-e0cfc2eade47, Response time: 38.61 seconds
+2025-07-15 23:27:36,001 [INFO] Request ID: 31bd6ea8-a5b2-41cc-b52f-6447dd5691b3, Response time: 85.45 seconds
+2025-07-15 23:28:49,933 [INFO] Request ID: 44bf9b47-40e3-4bd4-970a-4044f237d791, Response time: 53.61 seconds
+2025-07-15 23:31:59,062 [INFO] Request ID: 849b9e02-9814-4ceb-91f7-b566b4f1333d, Response time: 19.25 seconds
+2025-07-15 23:33:54,219 [INFO] Request ID: ee2dc387-64f2-4c7d-a12c-e89fe7964840, Response time: 23.14 seconds
+2025-07-15 23:46:20,512 [INFO] Request ID: 0059ee4f-d04b-4639-b019-2e1181bd02fe, Response time: 25.63 seconds
+2025-07-16 16:35:18,178 [ERROR] Unexpected error: table logs has no column named response_time
+2025-07-16 16:39:56,749 [INFO] Request ID: 05c3b9c4-6342-4646-a942-f286c4508253, Response time: 52.04 seconds
+2025-07-16 16:53:10,723 [INFO] Request ID: edf0d89a-766e-4d68-bc92-92e256e83460, Response time: 39.65 seconds
+2025-07-16 16:57:34,486 [INFO] Request ID: 485504fd-d65c-40d8-85c3-ea1d5e5cb946, Response time: 14.8 seconds
+2025-07-17 17:29:56,198 [INFO] Request ID: d9169307-e4f4-4513-b486-65203cee0e5f, Response time: 85.62 seconds
+2025-07-17 17:33:27,196 [INFO] Request ID: 61c7190c-3b88-48f2-b9b1-137e0ec2766c, Response time: 6.52 seconds
+2025-07-17 17:58:49,046 [INFO] Request ID: a7deada3-002b-4694-8d2d-7777b5cbadee, Response time: 88.99 seconds
+2025-07-17 18:02:42,079 [INFO] Request ID: 2a94e622-126f-456c-a985-b3ac28ac8cf7, Response time: 55.94 seconds
+2025-07-17 18:08:28,402 [INFO] Request ID: bf35d3dc-cc0d-450b-899c-f9c801395328, Response time: 42.96 seconds
+2025-07-17 18:47:39,954 [INFO] Request ID: 7481fde5-21a4-4bfa-a8bb-34d3ec8df22c, Response time: 89.4 seconds
+2025-07-17 18:48:45,911 [INFO] Request ID: 4a6cb3ee-0f4b-411e-b775-3ecc013187bd, Response time: 23.1 seconds
+2025-07-17 19:20:32,503 [INFO] Request ID: c0d75e15-e6b1-4243-9c47-afffdda50278, Response time: 51.22 seconds
+2025-07-17 19:24:36,660 [INFO] Request ID: 7dce1837-2b6e-4590-80f8-45ebd3fd1aa3, Response time: 6.23 seconds
+2025-07-17 19:26:45,459 [INFO] Request ID: 2206df6d-06d3-49e6-a525-8b19f30cd4bf, Response time: 16.4 seconds
+2025-07-17 19:28:11,230 [INFO] Request ID: 41637b99-c978-48ed-a067-cece81678fa1, Response time: 16.88 seconds
+2025-07-17 19:29:41,771 [INFO] Request ID: 5356728a-a7cd-4cba-9197-90bbb0f032f7, Response time: 19.69 seconds
+2025-07-17 19:31:18,270 [INFO] Request ID: 598f6ee6-4e11-4df7-87f0-f01e7a0de656, Response time: 18.69 seconds
+2025-07-17 19:31:58,459 [INFO] Request ID: e48794c3-abe5-4fae-a371-f3802cea9806, Response time: 17.32 seconds
+2025-07-17 19:33:20,178 [INFO] Request ID: f660e641-6eb2-4a20-8802-1f9e52a6e3fb, Response time: 18.27 seconds
+2025-07-17 19:34:39,824 [INFO] Request ID: 79fabdab-e669-44fa-93de-a7b886ebd8a3, Response time: 16.41 seconds
+2025-07-17 19:36:11,523 [INFO] Request ID: bbcec2a2-963f-473c-93e5-9fb3cc53e6e2, Response time: 37.7 seconds
+2025-07-17 19:37:54,797 [INFO] Request ID: 3430649d-747c-4207-b790-3c3243d4b4b7, Response time: 16.11 seconds
+2025-07-17 19:39:54,105 [INFO] Request ID: ff381658-dbb0-46e8-8c8e-188960f18871, Response time: 19.12 seconds
+2025-07-17 19:41:42,568 [INFO] Request ID: 24958cc8-2a7c-41e3-ad88-aaff0758dace, Response time: 16.02 seconds
+2025-07-17 19:45:12,299 [INFO] Request ID: 82f28a9d-675d-4c2f-a3e7-adff54f34b47, Response time: 22.96 seconds
+2025-07-17 19:48:28,657 [INFO] Request ID: 10a6f401-aeb1-43f9-9be7-ea7775372e3d, Response time: 22.35 seconds
+2025-07-17 19:53:08,195 [INFO] Request ID: c0baacc0-70ba-4240-b477-202db6d9e3a2, Response time: 6.35 seconds
+2025-07-17 20:02:16,839 [INFO] Request ID: 379cad7c-897e-476b-bf44-95c6216c1cd0, Response time: 51.86 seconds
+2025-07-17 20:51:05,337 [INFO] Request ID: cbf6a171-ed4b-4c1c-98f4-cc0fd6ad7803, Response time: 52.34 seconds
+2025-07-17 20:58:54,665 [INFO] Request ID: 9553c8b3-470b-473e-96ed-1eedca10c9e5, Response time: 36.7 seconds
+2025-07-18 17:48:12,995 [INFO] Request ID: 9a1aaffa-809b-4835-a3b7-6c0466328465, Response time: 89.41 seconds
+2025-07-18 18:01:21,494 [INFO] Request ID: 775ae52e-08cf-4d09-a9f3-ce7e56d6a4d6, Response time: 67.28 seconds
+2025-07-18 18:12:15,191 [INFO] Request ID: 5a95ea26-ef62-40eb-bd85-39a89ade8530, Response time: 62.1 seconds
+2025-07-18 18:24:32,981 [INFO] Request ID: be1f720a-27c6-4e80-9a2b-0aae8fe0ef82, Response time: 85.23 seconds
+2025-07-18 18:49:52,045 [INFO] Request ID: 61566b3c-47ff-4c63-b04f-06d0e8e6ec4f, Response time: 56.52 seconds
+2025-07-18 18:58:40,251 [INFO] Request ID: 4852eda8-5e15-40fc-9c47-389e9771603f, Response time: 40.83 seconds
+2025-07-18 20:23:11,465 [INFO] Request ID: 8080a482-fc05-43ba-8aed-42910d81fe81, Response time: 68.05 seconds
+2025-07-18 20:25:37,237 [INFO] Request ID: 7d81db5e-da04-407a-a4fb-3c5e5a841c40, Response time: 72.26 seconds
+2025-07-18 20:27:50,478 [INFO] Request ID: 1b1cad6b-0227-4a3f-9ecb-8df0c5631e2a, Response time: 71.68 seconds
+2025-07-18 20:32:35,269 [INFO] Request ID: 860a0441-647b-44bd-a31c-859b8fa444e9, Response time: 11.84 seconds
+2025-07-18 20:36:28,534 [INFO] Request ID: eb6da608-b79c-4425-b8d4-d183c5cfa74d, Response time: 52.75 seconds
+2025-07-18 20:45:38,706 [INFO] Request ID: c000b898-d302-46c7-97a6-1c63fbc6cc3e, Response time: 107.78 seconds
+2025-07-18 20:48:09,397 [INFO] Request ID: b643e97f-d061-4193-8307-153e0007366e, Response time: 73.36 seconds
+2025-07-18 20:56:23,940 [INFO] Request ID: 6e2ff6dd-ceb0-4a60-b716-434d4afa4387, Response time: 79.67 seconds
+2025-07-18 21:03:02,714 [INFO] Request ID: 7e251fca-383c-428c-a09b-f9347ee585bc, Response time: 67.17 seconds
+2025-07-18 21:04:50,371 [INFO] Request ID: f375e1e4-50a4-465b-b7cc-1cd75eb4fc5f, Response time: 51.46 seconds
+2025-07-18 21:06:33,591 [INFO] Request ID: cc8ee4a1-15a8-4be3-9e57-afaae8d58dcf, Response time: 68.78 seconds
+2025-07-18 21:09:39,367 [INFO] Request ID: 84b6b016-10e8-4010-8557-998a5d2518aa, Response time: 69.05 seconds
+2025-07-18 21:13:48,696 [INFO] Request ID: 8c0f5797-4eb3-4371-97fb-3167de367b7f, Response time: 65.85 seconds
+2025-07-18 22:29:29,000 [INFO] Request ID: 5c1fa907-bead-43c3-95bf-6952e984178d, Response time: 85.63 seconds
+2025-07-18 22:34:47,418 [INFO] Request ID: 9c6c8a7a-8ac1-49ca-b73c-1151cc8b914c, Response time: 33.57 seconds
+2025-07-18 22:38:14,856 [INFO] Request ID: 8b06d23e-e5cc-4f45-a174-d2e3e2330cfe, Response time: 47.69 seconds
+2025-07-18 22:53:45,150 [INFO] Request ID: 2df78b4f-1613-4145-95c1-b6e2b9a6bcc2, Response time: 63.91 seconds
+2025-07-18 23:09:07,347 [INFO] Request ID: 61ed3f80-d525-43f5-8c7e-83a577b7c295, Response time: 56.2 seconds
+2025-07-18 23:19:22,959 [INFO] Request ID: 9c743ce5-a224-45e5-8c84-6dca3572c423, Response time: 84.86 seconds
+2025-07-18 23:22:38,475 [INFO] Request ID: a0887249-5347-4b0c-a474-8fdb018d489d, Response time: 51.71 seconds

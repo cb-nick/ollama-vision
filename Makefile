@@ -2,68 +2,102 @@
 
 NETWORK_NAME = myapp-network
 
-# Flask
-FLASK_IMAGE = flask-app
-FLASK_CONTAINER = flask-app
-FLASK_PORT = 5002
-
 # Streamlit
 UI_IMAGE = streamlit-ui
 UI_CONTAINER = streamlit-ui
 UI_PORT = 8502
 
-# Ollama
-OLLAMA_IMAGE = ollama/ollama
-OLLAMA_CONTAINER = ollama
-OLLAMA_PORT = 11434
+# Virtual environment
+VENV_DIR = /home/nick/vision-demo/ollama-vision/streamlit_ui/.setup-env
+VENV_PYTHON = $(VENV_DIR)/bin/python3
+VENV_UVICORN = $(VENV_DIR)/bin/uvicorn
+
+run-search:
+	@# Check if model_server.py is running on localhost:8000, if not start it
+	@if ! nc -z localhost 8000; then \
+		echo "Starting model_server.py..."; \
+		( \
+            cd /home/nick/vision-demo/ollama-vision/streamlit_ui && \
+            nohup $(VENV_UVICORN) model_server:app --host 0.0.0.0 --port 8000 > model_server.log 2>&1 & \
+        ); \
+		echo "Waiting for model_server.py to start..."; \
+        for i in $$(seq 1 200); do \
+            if nc -z localhost 8000; then \
+                echo "model_server.py is now running."; \
+                break; \
+            fi; \
+			echo -n "."; \
+            sleep 0.5; \
+        done; \
+	else \
+		echo "model_server.py is already running on port 8000."; \
+	fi
+
+	@echo "Running semantic search demo..."
+	@$(VENV_PYTHON) /home/nick/vision-demo/ollama-vision/semantic_search_demo/semantic_search.py
+
+stop-search:
+	@echo "Stopping model_server.py..."
+	@pkill -f "uvicorn model_server:app" || true
+
+	@echo "Stopping semantic search demo..."
+	@pkill -f "semantic_search.py" || true
+
+	@echo "Done."
 
 build:
-	docker build -t $(FLASK_IMAGE) ./flask_app
-	docker build -t $(UI_IMAGE) ./streamlit_ui
-
-ollama-cpu:
-	# Run Ollama (CPU)
-	docker run -d \
-		--name $(OLLAMA_CONTAINER) \
-		--network $(NETWORK_NAME) \
-		-v ollama:/root/.ollama \
-		-p $(OLLAMA_PORT):$(OLLAMA_PORT) \
-		$(OLLAMA_IMAGE)
-
-ollama-gpu:
-	# Run Ollama (GPU)
-	docker run -d \
-		--gpus all \
-		--name $(OLLAMA_CONTAINER) \
-		--network $(NETWORK_NAME) \
-		-v ollama:/root/.ollama \
-		-p $(OLLAMA_PORT):$(OLLAMA_PORT) \
-		$(OLLAMA_IMAGE)
-
-ollama-list:
-	# List available models in Ollama
-	docker exec $(OLLAMA_CONTAINER) ollama list
-	#docker exec -it $(OLLAMA_CONTAINER) ollama list
+	@# Check if model_server.py is running on localhost:8000, if not start it
+	@if ! nc -z localhost 8000; then \
+		echo "Starting model_server.py..."; \
+		( \
+            cd /home/nick/vision-demo/ollama-vision/streamlit_ui && \
+            nohup $(VENV_UVICORN) model_server:app --host 0.0.0.0 --port 8000 > model_server.log 2>&1 & \
+        ); \
+		echo "Waiting for model_server.py to start..."; \
+        for i in $$(seq 1 200); do \
+            if nc -z localhost 8000; then \
+                echo "model_server.py is now running."; \
+                break; \
+            fi; \
+			echo -n "."; \
+            sleep 0.5; \
+        done; \
+	else \
+		echo "model_server.py is already running on port 8000."; \
+	fi
+	@docker build -t $(UI_IMAGE) ./streamlit_ui
 
 run:
-	docker network create $(NETWORK_NAME) || true
-	-docker rm -f $(OLLAMA_CONTAINER) $(FLASK_CONTAINER) $(UI_CONTAINER)
-	#docker run -d --gpus all --name $(OLLAMA_CONTAINER) --network $(NETWORK_NAME) -v ollama:/root/.ollama -p $(OLLAMA_PORT):11434 $(OLLAMA_IMAGE)
-	docker run -d --name $(FLASK_CONTAINER) --add-host=host.docker.internal:host-gateway --network $(NETWORK_NAME) -p $(FLASK_PORT):$(FLASK_PORT) $(FLASK_IMAGE)
-	docker run -d --name $(UI_CONTAINER) --add-host=host.docker.internal:host-gateway --network $(NETWORK_NAME) -p $(UI_PORT):8501 $(UI_IMAGE)
+	@echo "Starting Streamlit UI container..."
+
+	@echo
+	@echo "Creating Docker network if it doesn't exist..."
+	@docker network create $(NETWORK_NAME) 2>/dev/null || true
+
+	@echo
+	@echo "Cleaning up any existing containers..."
+	@docker rm -f $(UI_CONTAINER) 2>/dev/null || true
+
+	@echo
+	@echo "Running Streamlit UI container..."
+	@docker run -d -v /home/nick/vision-demo/ollama-vision/logs:/app/logs --name $(UI_CONTAINER) --add-host=host.docker.internal:host-gateway --network $(NETWORK_NAME) -p $(UI_PORT):8501 $(UI_IMAGE) 2>/dev/null || true
+
+	@echo
+	@echo "Streamlit UI is running at http://localhost:$(UI_PORT)"
 
 stop:
 	@echo "Stopping containers..."
-	-docker stop $(OLLAMA_CONTAINER)
-	-docker stop $(FLASK_CONTAINER)
-	-docker stop $(UI_CONTAINER)
+	@docker stop $(UI_CONTAINER) 2>/dev/null || true
 
+	@echo
 	@echo "Removing containers..."
-	#-docker rm $(OLLAMA_CONTAINER)
-	-docker rm $(FLASK_CONTAINER)
-	-docker rm $(UI_CONTAINER)
+	@docker rm $(UI_CONTAINER) 2>/dev/null || true
+
+	@echo
+	@echo "Stopping model_server.py..."
+	@pkill -f "uvicorn model_server:app" || true
 
 clean:
-	#docker rm -f $(OLLAMA_CONTAINER) $(FLASK_CONTAINER) $(UI_CONTAINER)
-	docker rmi $(OLLAMA_IMAGE) $(FLASK_IMAGE) $(UI_IMAGE) || true
-	docker network rm $(NETWORK_NAME) || true
+	@echo "Cleaning up Docker images and network..."
+	@docker rmi $(UI_IMAGE) 2>/dev/null || true
+	@docker network rm $(NETWORK_NAME) 2>/dev/null || true
