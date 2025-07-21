@@ -1,3 +1,4 @@
 .setup-env
 __pycache__
 *.pkl
+model_server.log
