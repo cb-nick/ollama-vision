@@ -9,7 +9,7 @@ COPY logo.png .
 COPY *.pkl .
 RUN mkdir -p /app/logs
 VOLUME /app/logs
-EXPOSE 8502
+EXPOSE 8504
 # Enables docker logs to show output from python print statements
 ENV PYTHONBUFFERED=1
 CMD ["streamlit", "run", "st_lost_item_analyzer.py", "--server.port=8501", "--server.headless=true"]
