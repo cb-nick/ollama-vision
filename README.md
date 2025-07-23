@@ -64,7 +64,7 @@ The entire application can be built and run using a single command.
     make run
     ```
 
-    You can now access the web application at **http://localhost:8502**.
+    You can now access the web application at **http://localhost:8504**.
 
 ### Running the CLI Semantic Search Demo
 
@@ -93,8 +93,8 @@ The `Makefile` provides several commands for convenience:
 
 | Command        | Description                                                                                             |
 | -------------- | ------------------------------------------------------------------------------------------------------- |
-| `build`        | Builds the `streamlit-ui` Docker image and ensures the model server is running.                         |
-| `run`          | Runs the Streamlit UI as a Docker container on port `8502`.                                             |
+| `build`        | Builds the `vision-demo` Docker image and ensures the model server is running.                         |
+| `run`          | Runs the Streamlit UI as a Docker container on port `8504`.                                             |
 | `stop`         | Stops the Streamlit UI container and the background model server.                                       |
 | `run-search`   | Runs the interactive semantic search CLI demo.                                                          |
 | `stop-search`  | Stops the semantic search CLI and the background model server.                                          |

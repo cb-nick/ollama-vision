@@ -3,9 +3,9 @@
 NETWORK_NAME = myapp-network
 
 # Streamlit
-UI_IMAGE = streamlit-ui
-UI_CONTAINER = streamlit-ui
-UI_PORT = 8502
+UI_IMAGE = vision-demo
+UI_CONTAINER = vision-demo
+UI_PORT = 8504
 
 # Virtual environment
 VENV_DIR = /home/nick/vision-demo/ollama-vision/streamlit_ui/.setup-env
