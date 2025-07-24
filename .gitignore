@@ -2,3 +2,4 @@
 __pycache__
 *.pkl
 streamlit_ui/model_server.log
+.vscode/
