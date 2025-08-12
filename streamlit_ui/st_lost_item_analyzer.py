@@ -35,6 +35,11 @@ You are an expert in visual recognition. Analyze the uploaded image of lost item
 - If it looks more like an Android phone, use "Android" as the type.
 - The type should be either "iPhone" or "Android", not just "smartphone".
 
+### Rules for classifying currency:
+- If the item is currency, identify the amount and the currency type (e.g., USD, EUR) based on the visible features.
+- The amount should be a numeric value, and the currency type should be a valid currency code.
+- Only extract the amount and currency type if they are clearly visible and unambiguous in the image.
+
 ### Item Counting Rules:
 - **Treat pairs as single items**: Items that naturally come in pairs (shoes, socks, gloves, earrings, etc.) should be counted and described as ONE item, not two separate items
 - **Example**: A pair of sneakers = 1 item of type "shoes" or "sneakers"
@@ -55,7 +60,9 @@ You are an expert in visual recognition. Analyze the uploaded image of lost item
 - Color(s) (only if clearly visible)
 - Material (only if clearly visible)
 - Distinctive features (only if clearly visible)
+    - Limit to just a few of the most important distinctive features
 - Text or labels that are legible (only if clearly visible)
+    - Limit to just a few of the most important text or labels
 - Any other attributes that are clearly visible and useful for identifying the item
 
 ### JSON Response Format:
@@ -68,6 +75,8 @@ You are an expert in visual recognition. Analyze the uploaded image of lost item
       "brand": "...",
       "color": "...",
       "material": "...",
+      "amount": "...",
+      "currency_type": "...",
       "distinctive_features": ["feature1", "feature2"] | [],
       ...,
     }
@@ -249,7 +258,12 @@ def format_json_as_bullets(data, indent=0):
             formatted += format_json_as_bullets(item, indent)
     else:
         data_str = str(data)
-        data_formatted = data_str.replace("_", " ").title() if not data_str.lower().startswith("ip") else data_str.replace("_", " ").replace("p", "P")
+        data_formatted = data_str.replace("_", " ")
+        if data_formatted.lower().startswith("ip"):
+            data_formatted = data_formatted.replace("p", "P")
+        else:
+            data_formatted = data_formatted[0].upper() + data_formatted[1:] if data_formatted else ""
+            
         formatted += f"{prefix}{data_formatted}\n"
 
     return formatted
@@ -337,11 +351,33 @@ if uploaded_file:
 
                 # Pretty print results as a bulleted outline
                 col1, col2 = st.columns([0.4, 0.6])
-                cb_type_formatted = item["cb_type"].title() if not item["cb_type"].startswith("ip") else item["cb_type"].replace("p", "P")
+                cb_type = item["cb_type"]
+                if cb_type.lower().startswith("ip"):
+                    cb_type_formatted = cb_type.replace("p", "P", 1)
+                else:
+                    cb_type_formatted = cb_type[:1].upper() + cb_type[1:] if cb_type else ""
                 col1.markdown("##### Chargerback Type: :green[" + (cb_type_formatted if cb_type_formatted else "Unknown") + "]")
                 col1.markdown("##### Product Code: :green[" + (str(item["product_code"]) if item["product_code"] else "Unknown") + "]")
+                
+                # Highlight known CB Attributes in the left column
+                cb_attributes = {"brand", "amount", "currency_type", "color", "material", "case_color"}
+                for attr in cb_attributes:
+                    if attr in item:
+                        value = item[attr]
+                        
+                        if value == 0 or value is None or value == "":
+                            continue
+                        
+                        if isinstance(value, list):
+                            value = ", ".join(value)
+                        
+                        if not isinstance(value, (int, float, np.number)):
+                            value = value[0].upper() + value[1:] if value else "Unknown"
+
+                        col1.markdown(f"##### {attr.replace('_', ' ').title()}: :green[{value}]")
+
                 with col2:
-                    item_no_cb = {k: v for k, v in item.items() if k not in ("cb_type", "product_code")}
+                    item_no_cb = {k: v for k, v in item.items() if k not in ("cb_type", "product_code", "type") and k not in cb_attributes}
                     formatted_item = format_json_as_bullets(item_no_cb)
                     st.markdown(f"```\n{formatted_item}\n```")
                 st.divider()
