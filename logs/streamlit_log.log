@@ -340,3 +340,30 @@
 2025-08-12 22:30:54,051 [INFO] Request ID: 9b4d7a2e-129e-4fb4-a06d-590ce7e33aa6, Response time: 2.74 seconds
 2025-08-12 22:33:36,430 [INFO] Request ID: 8a2b9e6d-e26c-4d2a-bcac-2dc238970103, Response time: 1.53 seconds
 2025-08-12 22:34:07,161 [INFO] Request ID: 672f2c28-ae6e-4e78-892b-97fb935d3b00, Response time: 2.29 seconds
+2025-08-13 01:03:59,811 [INFO] Request ID: 66177db3-f5d1-459d-9c1d-fd0d57dcd3cd, Response time: 5.68 seconds
+2025-08-13 01:05:35,836 [INFO] Request ID: fb301917-a8b4-4ca1-bff2-641f4cd2fad5, Response time: 2.43 seconds
+2025-08-13 01:06:14,907 [INFO] Request ID: 5b8fc5a4-8662-4d63-828a-8b7214ae31c4, Response time: 1.58 seconds
+2025-08-13 01:08:05,363 [INFO] Request ID: e5c0e99a-a8a8-4fa1-87d9-20e4c51ea63d, Response time: 2.21 seconds
+2025-08-13 15:14:25,856 [INFO] Request ID: 43ae97ef-422e-4bd6-84af-b413aa006d92, Response time: 5.74 seconds
+2025-08-13 15:49:26,871 [INFO] Request ID: 815e84b1-e1b3-4441-8993-d7f7f8767127, Response time: 5.56 seconds
+2025-08-13 15:49:55,806 [INFO] Request ID: 675a9dd6-9c9a-422b-9aae-7d3c4d7e64ed, Response time: 2.53 seconds
+2025-08-13 16:00:42,434 [INFO] Request ID: 7fa2de52-a10c-438f-8f30-32892e2cdf33, Response time: 5.53 seconds
+2025-08-13 23:39:44,803 [INFO] Request ID: 2ed9984d-fb78-4203-8a76-a8cf09a1660f, Response time: 4.51 seconds
+2025-08-14 16:49:15,668 [INFO] Request ID: b6477bd4-ee4f-4a4f-8439-ddbaca6d2b6e, Response time: 6.1 seconds
+2025-08-14 16:49:52,925 [INFO] Request ID: 5628ed85-8d11-4324-af0d-a8a881527973, Response time: 2.29 seconds
+2025-08-14 16:50:27,752 [INFO] Request ID: e67a09e6-f26b-4c5b-b0cc-55cc0c418a29, Response time: 3.42 seconds
+2025-08-14 16:51:17,207 [INFO] Request ID: 81b31fe1-7787-49d9-92fd-21c297d61316, Response time: 3.15 seconds
+2025-08-14 16:53:22,019 [INFO] Request ID: 846e22bd-46bd-45d3-a6a0-17c078cf8951, Response time: 2.58 seconds
+2025-08-14 17:25:42,933 [INFO] Request ID: e2deebb2-cf33-4804-8650-4aa6dee7c5cd, Response time: 4.55 seconds
+2025-08-14 17:27:16,951 [INFO] Request ID: fa43ed96-2623-4cc0-9fa3-052e6a9eac39, Response time: 1.72 seconds
+2025-08-14 17:27:26,518 [INFO] Request ID: fa43ed96-2623-4cc0-9fa3-052e6a9eac39, Response time: 0.48 seconds
+2025-08-14 17:27:43,046 [INFO] Request ID: ad9bc328-9179-4c4f-b574-ac25662bd87a, Response time: 2.43 seconds
+2025-08-14 17:28:06,456 [INFO] Request ID: a583b1cc-3baf-4452-8552-87346028e736, Response time: 2.39 seconds
+2025-08-14 17:28:48,093 [INFO] Request ID: eb7e9a76-21bf-4786-b839-d61431875ff4, Response time: 2.72 seconds
+2025-08-14 17:50:20,668 [INFO] Request ID: b928d38d-191f-4f0f-8fba-52baa981a385, Response time: 5.39 seconds
+2025-08-14 17:50:37,642 [INFO] Request ID: ff57c32e-5a5f-49a0-a6d0-71f126268401, Response time: 2.49 seconds
+2025-08-14 17:51:01,742 [INFO] Request ID: 08df02e7-2b6e-4809-99eb-0b07e7dd9d52, Response time: 2.42 seconds
+2025-08-14 17:51:48,830 [INFO] Request ID: dc9a70dd-4f1c-445b-b804-a6c79e9cb739, Response time: 2.74 seconds
+2025-08-14 22:37:54,531 [ERROR] Request failed: 500 Server Error: Internal Server Error for url: http://host.docker.internal:11434/api/generate
+2025-08-14 22:42:53,990 [ERROR] Request failed: 500 Server Error: Internal Server Error for url: http://host.docker.internal:11434/api/generate
+2025-08-14 22:46:25,982 [ERROR] Request failed: 500 Server Error: Internal Server Error for url: http://host.docker.internal:11434/api/generate

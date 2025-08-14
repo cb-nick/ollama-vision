@@ -274,18 +274,38 @@ st.image("logo.png", width=250)
 st.title("Chargerback® AI — Vision Demo")
 st.text("Upload an image, and our AI-powered vision model will instantly analyze it, returning a detailed JSON description of the item(s) in the frame. This is a demonstration tool to showcase our capabilities.")
 
+# --- Webcam Upload ---
+# Add a button to toggle the camera input visibility
+if "show_camera" not in st.session_state:
+    st.session_state.show_camera = False
+
+if st.button("📷 Open Camera"):
+    st.session_state.show_camera = not st.session_state.show_camera
+
+webcam_file = None
+if st.session_state.show_camera:
+    webcam_file = st.camera_input("Capture an image of the lost item")
+    if webcam_file:
+        st.session_state.show_camera = False  # Hide the camera after capturing the image
+
 # --- File Upload ---
 uploaded_file = st.file_uploader("Upload an image of the lost item", type=["jpg", "jpeg", "png"])
 
+image_file = None
+if webcam_file:
+    image_file = webcam_file
+elif uploaded_file:
+    image_file = uploaded_file
+
 # --- Inference Execution ---
-if uploaded_file:
+if image_file:
     # --- Reset session state if a new file is uploaded ---
-    if "last_uploaded_filename" not in st.session_state or st.session_state.last_uploaded_filename != uploaded_file.name:
+    if "last_image_filename" not in st.session_state or st.session_state.last_image_filename != image_file.name:
         st.session_state.clear()
-        st.session_state.last_uploaded_filename = uploaded_file.name
+        st.session_state.last_image_filename = image_file.name
         st.session_state.request_id = str(uuid.uuid4())  # Generate a new request ID for this session
 
-    image_bytes = uploaded_file.read()
+    image_bytes = image_file.read()
     image_b64 = base64.b64encode(image_bytes).decode("utf-8")
     st.session_state.image = image_b64  # Save the base64 image in session state
     st.image(image_bytes, caption="Uploaded Image", use_container_width=True)
