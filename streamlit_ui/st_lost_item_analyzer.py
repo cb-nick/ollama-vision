@@ -120,8 +120,13 @@ def load_pickle_files():
 if "data_loaded" not in st.session_state:
     start_load_time = time.time()
     print("Loading pickle file data...", flush=True)
-    
-    PC_TO_ITEM, ALIAS_TO_PC, ALIASES, ALIAS_EMBEDDINGS = load_pickle_files()
+
+    pc_to_item, alias_to_pc, aliases, alias_embeddings = load_pickle_files()
+
+    st.session_state.PC_TO_ITEM = pc_to_item
+    st.session_state.ALIAS_TO_PC = alias_to_pc
+    st.session_state.ALIASES = aliases
+    st.session_state.ALIAS_EMBEDDINGS = alias_embeddings
     st.session_state.data_loaded = True  # Ensure data is loaded only once
     
     end_load_time = time.time()
@@ -268,6 +273,15 @@ def format_json_as_bullets(data, indent=0):
 
     return formatted
 
+def reset_uploader():
+    st.session_state["file_uploader_key"] += 1  # Increment key to reset the uploader
+
+# --- Global Variables ---
+PC_TO_ITEM = st.session_state.PC_TO_ITEM
+ALIAS_TO_PC = st.session_state.ALIAS_TO_PC
+ALIASES = st.session_state.ALIASES
+ALIAS_EMBEDDINGS = st.session_state.ALIAS_EMBEDDINGS
+
 # --- Streamlit UI ---
 st.set_page_config(page_title="Chargerback Vision Demo", layout="centered")
 st.image("logo.png", width=250)
@@ -281,34 +295,76 @@ if "show_camera" not in st.session_state:
 
 if st.button("📷 Open Camera"):
     st.session_state.show_camera = not st.session_state.show_camera
+    # Clear any saved webcam image
+    if "webcam_image" in st.session_state:
+        del st.session_state["webcam_image"]
 
 webcam_file = None
 if st.session_state.show_camera:
     webcam_file = st.camera_input("Capture an image of the lost item")
     if webcam_file:
+        st.session_state.webcam_image = webcam_file.getvalue()  # Save the captured image in session state
+        st.session_state.webcam_filename = f"webcam_capture_{int(time.time())}.jpg"
         st.session_state.show_camera = False  # Hide the camera after capturing the image
+        reset_uploader()
+        st.rerun()
 
-# --- File Upload ---
-uploaded_file = st.file_uploader("Upload an image of the lost item", type=["jpg", "jpeg", "png"])
+if "file_uploader_key" not in st.session_state:
+    st.session_state["file_uploader_key"] = 0
+
+uploaded_file = st.file_uploader(
+    "Upload an image of the lost item",
+    type=["jpg", "jpeg", "png"],
+    key=st.session_state["file_uploader_key"],
+)
+
+# Delete webcam photo if file is uploaded
+if uploaded_file is not None:
+    if "webcam_image" in st.session_state:
+        del st.session_state["webcam_image"]
 
 image_file = None
-if webcam_file:
-    image_file = webcam_file
+image_bytes = None
+current_image_source = None
+
+if "webcam_image" in st.session_state:
+    image_bytes = st.session_state.webcam_image
+    
+    class MockFile:
+        def __init__(self, name, data):
+            self.name = name
+            self._data = data
+        def read(self):
+            return self._data
+
+    image_file = MockFile(st.session_state.webcam_filename, image_bytes)
+    current_image_source = "webcam"
 elif uploaded_file:
     image_file = uploaded_file
+    image_bytes = uploaded_file.read()
+    current_image_source = "upload"
 
 # --- Inference Execution ---
-if image_file:
+if image_file and image_bytes:
+    print(f"Processing {current_image_source} file: {image_file.name}")
+    
+    # Create a unique identifier for this image that includes the source
+    current_image_id = f"{current_image_source}_{image_file.name}"
+
     # --- Reset session state if a new file is uploaded ---
-    if "last_image_filename" not in st.session_state or st.session_state.last_image_filename != image_file.name:
-        st.session_state.clear()
-        st.session_state.last_image_filename = image_file.name
+    if "last_image_id" not in st.session_state or st.session_state.last_image_id != current_image_id:
+        # Clear only the analysis-related session state, keep UI state
+        analysis_keys = ['response', 'response_time', 'feedback', 'saved_types']
+        for key in analysis_keys:
+            if key in st.session_state:
+                del st.session_state[key]
+                
+        st.session_state.last_image_id = current_image_id
         st.session_state.request_id = str(uuid.uuid4())  # Generate a new request ID for this session
 
-    image_bytes = image_file.read()
     image_b64 = base64.b64encode(image_bytes).decode("utf-8")
     st.session_state.image = image_b64  # Save the base64 image in session state
-    st.image(image_bytes, caption="Uploaded Image", use_container_width=True)
+    st.image(image_bytes, caption=f"Image from {current_image_source}", use_container_width=True)
 
     # -- Initialize session state variables if not already set ---
     if "response" not in st.session_state:
