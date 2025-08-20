@@ -15,6 +15,7 @@ VENV_UVICORN = $(VENV_DIR)/bin/uvicorn
 # Project directories
 PROJECT_DIR = /home/nick/vision-demo/ollama-vision
 STREAMLIT_DIR = $(PROJECT_DIR)/streamlit_ui
+REFACTORED_DIR = $(PROJECT_DIR)/refactored
 
 run-search:
 	@# Check if model_server.py is running on localhost:8000, if not start it
@@ -51,24 +52,24 @@ stop-search:
 
 validate-structure:
 	@echo "Validating project structure..."
-	@if [ ! -d "$(STREAMLIT_DIR)/services" ]; then \
-		echo "ERROR: services/ directory not found in $(STREAMLIT_DIR)"; \
+	@if [ ! -d "$(REFACTORED_DIR)/services" ]; then \
+		echo "ERROR: services/ directory not found in $(REFACTORED_DIR)"; \
 		exit 1; \
 	fi
-	@if [ ! -d "$(STREAMLIT_DIR)/ui" ]; then \
-		echo "ERROR: ui/ directory not found in $(STREAMLIT_DIR)"; \
+	@if [ ! -d "$(REFACTORED_DIR)/ui" ]; then \
+		echo "ERROR: ui/ directory not found in $(REFACTORED_DIR)"; \
 		exit 1; \
 	fi
-	@if [ ! -d "$(STREAMLIT_DIR)/utils" ]; then \
-		echo "ERROR: utils/ directory not found in $(STREAMLIT_DIR)"; \
+	@if [ ! -d "$(REFACTORED_DIR)/utils" ]; then \
+		echo "ERROR: utils/ directory not found in $(REFACTORED_DIR)"; \
 		exit 1; \
 	fi
-	@if [ ! -f "$(STREAMLIT_DIR)/main.py" ]; then \
-		echo "ERROR: main.py not found in $(STREAMLIT_DIR)"; \
+	@if [ ! -f "$(REFACTORED_DIR)/main.py" ]; then \
+		echo "ERROR: main.py not found in $(REFACTORED_DIR)"; \
 		exit 1; \
 	fi
-	@if [ ! -f "$(STREAMLIT_DIR)/config.py" ]; then \
-		echo "ERROR: config.py not found in $(STREAMLIT_DIR)"; \
+	@if [ ! -f "$(REFACTORED_DIR)/config.py" ]; then \
+		echo "ERROR: config.py not found in $(REFACTORED_DIR)"; \
 		exit 1; \
 	fi
 	@echo "Project structure validation passed!"
@@ -94,7 +95,7 @@ build: validate-structure
 		echo "model_server.py is already running on port 8000."; \
 	fi
 	@echo "Building Docker image..."
-	@docker build -t $(UI_IMAGE) ./streamlit_ui
+	@docker build -t $(UI_IMAGE) ./refactored
 
 run:
 	@echo "Starting Streamlit UI container..."
@@ -137,19 +138,6 @@ clean:
 	@docker rmi $(UI_IMAGE) 2>/dev/null || true
 	@docker network rm $(NETWORK_NAME) 2>/dev/null || true
 
-# Development helpers
-test:
-	@echo "Running tests..."
-	@cd $(STREAMLIT_DIR) && $(VENV_PYTHON) -m pytest tests/ -v || echo "No tests found or pytest not installed"
-
-lint:
-	@echo "Running linter..."
-	@cd $(STREAMLIT_DIR) && $(VENV_PYTHON) -m flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics || echo "flake8 not installed"
-
-format:
-	@echo "Formatting code..."
-	@cd $(STREAMLIT_DIR) && $(VENV_PYTHON) -m black . || echo "black not installed"
-
 # Logs
 logs:
 	@echo "Showing container logs..."
@@ -170,4 +158,4 @@ dev:
         ); \
 		sleep 5; \
 	fi
-	@cd $(STREAMLIT_DIR) && streamlit run main.py --server.port=$(UI_PORT)
+	@cd $(REFACTORED_DIR) && streamlit run main.py --server.port=$(UI_PORT)
