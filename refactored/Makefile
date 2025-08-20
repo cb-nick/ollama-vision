@@ -95,7 +95,7 @@ build: validate-structure
 		echo "model_server.py is already running on port 8000."; \
 	fi
 	@echo "Building Docker image..."
-	@docker build -t $(UI_IMAGE) ./refactored
+	@docker build -t $(UI_IMAGE) ./
 
 run:
 	@echo "Starting Streamlit UI container..."
