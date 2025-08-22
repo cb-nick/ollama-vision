@@ -47,7 +47,7 @@ class VisionService:
             parsed_output = json.loads(text)
         except json.JSONDecodeError as e:
             st.warning(f"⚠️ Failed to parse JSON: {e}")
-            return None
+            return {}
         
         # Clean empty/unknown attributes
         if parsed_output and "items" in parsed_output:

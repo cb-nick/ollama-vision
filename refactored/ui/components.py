@@ -1,5 +1,6 @@
 import streamlit as st
 import numpy as np
+from ui.image_handler import ImageHandler
 from typing import Optional
 
 class UIComponents:
@@ -10,6 +11,7 @@ class UIComponents:
         st.image("logo.png", width=250)
         st.title("Chargerback® AI — Vision Demo")
         st.text("Upload an image, and our AI-powered vision model will instantly analyze it, returning a detailed JSON description of the item(s) in the frame. This is a demonstration tool to showcase our capabilities.")
+        st.info("Tip: For best results, use clear, well-lit photos with the item centered and in focus. Avoid cluttered backgrounds and ensure the entire item is visible.")
     
     def display_results(self, response: dict, response_time: float):
         """Display analysis results."""
@@ -19,6 +21,11 @@ class UIComponents:
         if "items" in response:
             for item in response["items"]:
                 self._display_item_result(item)
+
+            self._show_next_button(response)
+
+        if "items" not in response or not response["items"]:
+            st.info("No results found, please try another photo")
     
     def _display_item_result(self, item: dict):
         """Display results for a single item."""
@@ -43,7 +50,16 @@ class UIComponents:
             st.markdown(f"```\n{formatted_item}\n```")
         
         st.divider()
-    
+
+    def _show_next_button(self, response: dict):
+        """Show the next button."""
+        _, col2 = st.columns([0.9, 0.1])
+        with col2:
+            if st.button("Next"):
+                print(f"Next button clicked. Response to pass along:\n{response}", flush=True)
+                st.session_state["file_uploader_key"] += 1
+                st.rerun()
+
     def _format_cb_type(self, cb_type: str) -> str:
         """Format CB type for display."""
         if not cb_type:
