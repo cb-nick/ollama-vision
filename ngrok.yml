@@ -1,0 +1,8 @@
+authtoken: 31TWNdBJaSciKGwoh7EOpp4dbot_31gKAqCa4NmHG2bMH8dwL
+tunnels:
+  tunnel1:
+    proto: http
+    addr: 8505
+  tunnel2:
+    proto: http
+    addr: 8504

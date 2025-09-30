@@ -13,16 +13,16 @@ class DataLoader:
         
         data = {}
         
-        with open("pc_to_item.pkl", "rb") as f:
+        with open("data/pc_to_item.pkl", "rb") as f:
             data["PC_TO_ITEM"] = pickle.load(f)
         
-        with open("alias_to_pc.pkl", "rb") as f:
+        with open("data/alias_to_pc.pkl", "rb") as f:
             data["ALIAS_TO_PC"] = pickle.load(f)
         
-        with open("aliases.pkl", "rb") as f:
+        with open("data/aliases.pkl", "rb") as f:
             data["ALIASES"] = pickle.load(f)
         
-        with open("alias_embeddings.pkl", "rb") as f:
+        with open("data/alias_embeddings.pkl", "rb") as f:
             data["ALIAS_EMBEDDINGS"] = pickle.load(f)
         
         end_time = time.time()
